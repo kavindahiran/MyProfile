@@ -83,3 +83,84 @@
         }
     }
 }
+
+.skills-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  padding: 40px;
+}
+
+/* Glass Card */
+.skill-card.glass {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 18px;
+  padding: 24px;
+  color: #fff;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Netflix-style hover effect */
+.skill-card.glass:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  border-color: rgba(255, 0, 80, 0.4);
+}
+
+/* Icon styling */
+.skill-icon {
+  color: #ff0050;
+  margin-bottom: 12px;
+}
+
+/* Title */
+.skill-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+/* Description */
+.skill-card p {
+  font-size: 14px;
+  opacity: 0.85;
+  line-height: 1.6;
+}
+
+/* Chip container */
+.chip-group {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+/* Label */
+.chip-title {
+  font-size: 12px;
+  opacity: 0.7;
+  margin-right: 6px;
+}
+
+/* Modern chip */
+.chip {
+  padding: 6px 10px;
+  font-size: 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #fff;
+  transition: 0.2s;
+}
+
+/* Chip hover */
+.chip:hover {
+  background: rgba(255, 0, 80, 0.2);
+  border-color: rgba(255, 0, 80, 0.4);
+}

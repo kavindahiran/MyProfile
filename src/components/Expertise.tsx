@@ -6,85 +6,119 @@ import Chip from '@mui/material/Chip';
 import '../assets/styles/Expertise.scss';
 
 const labelsFirst = [
-    "React",
-    "TypeScript",
-    "JavaScript",
-    "HTML5",
-    "CSS3",
-    "SASS",
-    "Flask",
-    "Python",
-    "SQL",
-    "PostgreSQL",
-    "Postman"
+  "ASP.NET Core",
+  "MVC",
+  "C#",
+  "Entity Framework",
+  "ADO.NET",
+  "RESTful APIs",
+  "React",
+  "Vue.js",
+  "AngularJS",
+  "JavaScript",
+  "HTML5",
+  "CSS3",
+  "Bootstrap",
+  "jQuery",
+  "SQL Server",
+  "PostgreSQL",
+  "Oracle",
+  "Postman"
 ];
 
 const labelsSecond = [
-    "Git",
-    "GitHub Actions",
-    "Docker",
-    "AWS",
-    "Azure",
-    "Linux",
-    "Snowflake",
-    "Pandas",
-    "Selenium",
+  "Azure DevOps",
+  "CI/CD Pipelines",
+  "Docker",
+  "Git",
+  "Bitbucket",
+  "TFS",
+  "Azure Service Bus",
+  "SignalR",
+  "Hangfire",
+  "Microsoft Azure",
+  "Linux",
+  "IIS",
+  "Automation Anywhere",
+  "Selenium",
+  "Jira"
 ];
 
 const labelsThird = [
-    "OpenAI",
-    "Groq",
-    "LangChain",
-    "Qdrant",
-    "Hugging Face",
-    "LlamaIndex",
-    "Streamlit",
+  "OpenAI API",
+  "LangChain",
+  "LangGraph",
+  "LlamaIndex",
+  "Hugging Face",
+  "Groq API",
+  "Qdrant",
+  "Vector Databases",
+  "RAG Systems",
+  "Prompt Engineering",
+  "Python",
+  "Pandas",
+  "Streamlit"
 ];
 
 function Expertise() {
     return (
-    <div className="container" id="expertise">
-        <div className="skills-container">
-            <h1>Expertise</h1>
-            <div className="skills-grid">
-                <div className="skill">
-                    <FontAwesomeIcon icon={faReact} size="3x"/>
-                    <h3>Full Stack Web Development</h3>
-                    <p>I have built a diverse array of web applications from scratch using modern technologies such as React and Flask. I have a strong proficiency in the SDLC process and frontend + backend development.</p>
-                    <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
-                        {labelsFirst.map((label, index) => (
-                            <Chip key={index} className='chip' label={label} />
-                        ))}
-                    </div>
-                </div>
+         <div id="expertise">
+    <div className="skills-wrapper" >
 
-                <div className="skill">
-                    <FontAwesomeIcon icon={faDocker} size="3x"/>
-                    <h3>DevOps & Automation</h3>
-                    <p>Once the application is built, I help clients set up DevOps testing, CI/CD pipelines, and deployment automation to support the successful Go-Live.</p>
-                    <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
-                        {labelsSecond.map((label, index) => (
-                            <Chip key={index} className='chip' label={label} />
-                        ))}
-                    </div>
-                </div>
+  <div className="skill-card glass">
+    <FontAwesomeIcon icon={faReact} size="3x" className="skill-icon" />
+    <h3>Enterprise Full-Stack Development</h3>
 
-                <div className="skill">
-                    <FontAwesomeIcon icon={faPython} size="3x"/>
-                    <h3>GenAI & LLM</h3>
-                    <p>Stay relevant in the market by leveraging the latest AI models in your projects. I have professional experience building enterprise grade GenAI-enabled solutions to empower intelligent decision making.</p>
-                    <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
-                        {labelsThird.map((label, index) => (
-                            <Chip key={index} className='chip' label={label} />
-                        ))}
-                    </div>
-                </div>
-            </div>
-        </div>
+    <p>
+      Experienced Software Engineer specializing in scalable enterprise applications using
+      ASP.NET Core, MVC, and modern frontend frameworks. Strong focus on clean architecture,
+      RESTful APIs, and high-performance systems.
+    </p>
+
+    <div className="chip-group">
+      <span className="chip-title">Tech Stack</span>
+      {labelsFirst.map((label, index) => (
+        <span key={index} className="chip">{label}</span>
+      ))}
     </div>
+  </div>
+
+  <div className="skill-card glass">
+    <FontAwesomeIcon icon={faDocker} size="3x" className="skill-icon" />
+    <h3>Cloud, DevOps & Automation</h3>
+
+    <p>
+      Experienced in CI/CD pipelines, Azure DevOps, Docker containerization, and system
+      automation. Strong background in delivering production-grade systems in agile environments.
+    </p>
+
+    <div className="chip-group">
+      <span className="chip-title">Tech Stack</span>
+      {labelsSecond.map((label, index) => (
+        <span key={index} className="chip">{label}</span>
+      ))}
+    </div>
+  </div>
+
+  <div className="skill-card glass">
+    <FontAwesomeIcon icon={faPython} size="3x" className="skill-icon" />
+    <h3>AI Engineering & Intelligent Systems</h3>
+
+    <p>
+      Building modern AI-powered systems using LLMs, vector databases, and RAG pipelines.
+      Strong foundation in Python, data processing, and AI integration workflows.
+    </p>
+
+    <div className="chip-group">
+      <span className="chip-title">Tech Stack</span>
+      {labelsThird.map((label, index) => (
+        <span key={index} className="chip">{label}</span>
+      ))}
+    </div>
+  </div>
+
+</div>
+</div>
     );
 }
 

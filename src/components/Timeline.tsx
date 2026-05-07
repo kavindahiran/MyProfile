@@ -11,58 +11,83 @@ function Timeline() {
     <div id="history">
       <div className="items-container">
         <h1>Career History</h1>
-        <VerticalTimeline>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
-            contentArrowStyle={{ borderRight: '7px solid  white' }}
-            date="2022 - present"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
-            icon={<FontAwesomeIcon icon={faBriefcase} />}
-          >
-            <h3 className="vertical-timeline-element-title">Technology Consultant</h3>
-            <h4 className="vertical-timeline-element-subtitle">Dallas, TX</h4>
-            <p>
-              Full-stack Web Development, GenAI/LLM, Project Management, Business Development
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="2020 - 2022"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
-            icon={<FontAwesomeIcon icon={faBriefcase} />}
-          >
-            <h3 className="vertical-timeline-element-title">Full Stack Engineer</h3>
-            <h4 className="vertical-timeline-element-subtitle">Laie, HI</h4>
-            <p>
-              Frontend Development, Backend Development, User Experience, Team Leading
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="2021 - 2021"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
-            icon={<FontAwesomeIcon icon={faBriefcase} />}
-          >
-            <h3 className="vertical-timeline-element-title">Staff Engineer Intern</h3>
-            <h4 className="vertical-timeline-element-subtitle">Laie, HI</h4>
-            <p>
-              Full-stack Development, API Development, User Experience
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="2020 - 2020"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
-            icon={<FontAwesomeIcon icon={faBriefcase} />}
-          >
-            <h3 className="vertical-timeline-element-title">Data Analyst Intern</h3>
-            <h4 className="vertical-timeline-element-subtitle">Tokyo, Japan</h4>
-            <p>
-              Automation, Data Governance, Statistical Analysis
-            </p>
-          </VerticalTimelineElement>
-        </VerticalTimeline>
+       <VerticalTimeline>
+  <VerticalTimelineElement
+    className="vertical-timeline-element--work"
+    contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
+    contentArrowStyle={{ borderRight: '7px solid  white' }}
+    date="Feb 2026 - Present"
+    iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
+    icon={<FontAwesomeIcon icon={faBriefcase} />}
+  >
+    <h3 className="vertical-timeline-element-title">Senior Software Engineer</h3>
+    <h4 className="vertical-timeline-element-subtitle">Sumathi Holdings, Colombo (Hybrid)</h4>
+    <p>
+      Leading enterprise application development and system enhancements in a manufacturing-oriented environment.
+      Working on MES (Manufacturing Execution System) focused on machine planning, job scheduling, and production optimization.
+    </p>
+  </VerticalTimelineElement>
+
+  <VerticalTimelineElement
+    className="vertical-timeline-element--work"
+    date="Sep 2024 - Feb 2026"
+    iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
+    icon={<FontAwesomeIcon icon={faBriefcase} />}
+  >
+    <h3 className="vertical-timeline-element-title">Senior Software Engineer</h3>
+    <h4 className="vertical-timeline-element-subtitle">Virtusa Sri Lanka, Colombo (Hybrid)</h4>
+    <p>
+      Worked on enterprise-grade systems using ASP.NET Core and Azure technologies.
+      Involved in backend optimization, production issue troubleshooting, and mentoring junior developers.
+      Contributed to scalable cloud-based solutions using Azure Functions and DevOps pipelines.
+    </p>
+  </VerticalTimelineElement>
+
+  <VerticalTimelineElement
+    className="vertical-timeline-element--work"
+    date="Jan 2024 - Sep 2024"
+    iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
+    icon={<FontAwesomeIcon icon={faBriefcase} />}
+  >
+    <h3 className="vertical-timeline-element-title">Software Engineer</h3>
+    <h4 className="vertical-timeline-element-subtitle">Twire (Pvt) Ltd, Colombo</h4>
+    <p>
+      Developed a dynamic MES-based project management system for machine planning and job scheduling.
+      Built full-stack solutions using ASP.NET Core 6.0 with React frontend.
+      Implemented CI/CD pipelines using Azure DevOps and worked with optimization algorithms (Google OR-Tools).
+    </p>
+  </VerticalTimelineElement>
+
+  <VerticalTimelineElement
+    className="vertical-timeline-element--work"
+    date="Jul 2020 - Jan 2024"
+    iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
+    icon={<FontAwesomeIcon icon={faBriefcase} />}
+  >
+    <h3 className="vertical-timeline-element-title">Software Engineer</h3>
+    <h4 className="vertical-timeline-element-subtitle">hSenid Business Solutions, Colombo</h4>
+    <p>
+      Designed and developed enterprise HR systems including recruitment, employee management,
+      attendance, and probation modules for large-scale clients.
+      Worked with ASP.NET MVC, N-Tier architecture, ADO.NET, and Entity Framework,
+      ensuring scalable and maintainable enterprise solutions.
+    </p>
+  </VerticalTimelineElement>
+
+  <VerticalTimelineElement
+    className="vertical-timeline-element--work"
+    date="Dec 2019 - Jun 2020"
+    iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
+    icon={<FontAwesomeIcon icon={faBriefcase} />}
+  >
+    <h3 className="vertical-timeline-element-title">Intern Automation Engineer</h3>
+    <h4 className="vertical-timeline-element-subtitle">Hayleys Advantis, Colombo</h4>
+    <p>
+      Worked on automation of SaaS-based ERP systems using Selenium and Automation Anywhere.
+      Developed supporting ASP.NET MVC tools to enhance automation workflows and system efficiency.
+    </p>
+  </VerticalTimelineElement>
+</VerticalTimeline>
       </div>
     </div>
   );
